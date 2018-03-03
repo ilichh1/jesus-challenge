@@ -1,0 +1,16 @@
+<?php
+
+require_once "conexion.php";
+$conexion=conexion();
+  $_POST['fecha'];
+  $c=$_POST['categoria'];
+  $co=$_POST['descripcion'];
+  $cu=$_POST['monto'];
+  echo $f;
+  echo $c;
+  $sql="INSERT into registro (fecha,categoria,descripcion,monto)
+        values('$f','$c','$co','$cu')";
+
+      echo  $result=mysqli_query($conexion,$sql);
+
+ ?>
